@@ -1,0 +1,2 @@
+require('./bootstrapVue');
+require('./axios');
