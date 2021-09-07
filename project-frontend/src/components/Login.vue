@@ -27,14 +27,14 @@ export default {
         console.log(error);
       })
     },
-    registerUser() {
-      this.axios.post('/register', this.user)
-        .then(response => {
-          console.log(response)
-        }).catch(error => {
-        console.log(error);
-      })
-    }
+    // registerUser() {
+    //   this.axios.post('/register', this.user)
+    //     .then(response => {
+    //       console.log(response)
+    //     }).catch(error => {
+    //     console.log(error);
+    //   })
+    // }
   }
 }
 </script>

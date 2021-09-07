@@ -28,7 +28,7 @@ class Register extends FormRequest
             'phone' => 'min:9|max:9',
             'address'=> 'min:5|alpha_dash',
             'email' => 'required|email|unique:users',
-            'avatar' => 'image',
+            // 'avatar' => 'image',
             'password' => 'required|min:6',
         ];
     }

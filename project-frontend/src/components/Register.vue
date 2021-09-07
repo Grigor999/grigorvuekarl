@@ -5,8 +5,8 @@
     <input type="text" v-model="user.name">
     <input type="text" v-model="user.phone">
     <input type="text" v-model="user.address">
-    <input type="text" v-model="user.image">
-    <b-button class="btn btn-submit" @click="registerUser">Login</b-button>
+    <!-- <input type="text" v-model="user.image"> -->
+    <b-button class="btn btn-submit" @click="register">REGISTER</b-button>
   </div>
 </template>
 
@@ -20,20 +20,12 @@ export default {
         password: '123456798',
         phone: 'Samsung',
         address: 'Erevan',
-        image: 'sdjkfbgdjkfbg',
+        // image: 'sdjkfbgdjkfbg',
       }
     }
   },
   methods: {
-    loginUser() {
-      this.axios.post('/login', this.user)
-      .then(response => {
-          console.log(response)
-      }).catch(error => {
-        console.log(error);
-      })
-    },
-    registerUser() {
+    register() {
       this.axios.post('/register', this.user)
         .then(response => {
           console.log(response)

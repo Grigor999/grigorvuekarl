@@ -8,6 +8,7 @@ import NotFound from "../components/NotFound";
 import userRoutes from "../components/user/userRoutes";
 import Login from "../components/Login";
 import Register from "../components/Register";
+import Verify from "../components/Verify";
 
 require('../plugins')
 
@@ -22,6 +23,7 @@ export default new Router({
     ...userRoutes,
     { path: '/login', name: 'Login', component: Login },
     { path: '/register', name: 'Register', component: Register },
+    { path: '/verify/:email/:token', name: 'verify', component: Verify },
     { path: '*', component: NotFound}
   ]
 })

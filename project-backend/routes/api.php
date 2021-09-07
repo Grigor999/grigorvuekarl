@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('register', [AuthController::class, 'register'])->name('register.api');
 Route::post('login', [AuthController::class, 'login'])->name('login.api');
+Route::post('verification', [AuthController::class, 'verify'])->name('verify.api');
